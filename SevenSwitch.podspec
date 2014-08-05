@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SevenSwitch"
-  s.version      = "1.3.0"
+  s.version      = "1.3.1"
   s.summary      = "iOS7 style drop in replacement for UISwitch."
   s.homepage     = "https://github.com/bvogelzang/SevenSwitch"
   s.screenshots  = "https://raw.github.com/bvogelzang/SevenSwitch/master/ExampleImages/example.gif", "https://raw.github.com/bvogelzang/SevenSwitch/master/ExampleImages/example.png"
