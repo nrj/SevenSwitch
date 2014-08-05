@@ -33,6 +33,12 @@
 
 
 /*
+ * Sets the inset amount of the knob from the background in points. Default is 1.0 pt.
+ */
+
+@property (nonatomic, assign) CGFloat knobInset;
+
+/*
  *	Sets the background color when the switch is off.
  *  Defaults to clear color.
  */
