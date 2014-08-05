@@ -59,6 +59,20 @@
     mySwitch3.onTintColor = [UIColor colorWithRed:0.45f green:0.58f blue:0.67f alpha:1.00f];
     mySwitch3.borderColor = [UIColor clearColor];
     mySwitch3.shadowColor = [UIColor blackColor];
+
+    // Example with a custom knob inset
+    SevenSwitch *mySwitch4 = [[SevenSwitch alloc] initWithFrame:CGRectZero];
+    mySwitch4.center = CGPointMake(self.view.bounds.size.width * 0.5, self.view.bounds.size.height * 0.5 + 140);
+    mySwitch4.knobInset = 4.0;
+    [mySwitch4 addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:mySwitch4];
+    
+    [mySwitch4 setThumbTintColor:[UIColor blackColor]];
+    [mySwitch4 setActiveColor:[UIColor colorWithHue:0.444 saturation:0.6 brightness:1.0 alpha:1.0]];
+    [mySwitch4 setOnTintColor:[UIColor colorWithHue:0.444 saturation:0.6 brightness:1.0 alpha:1.0]];
+    [mySwitch4 setInactiveColor:[UIColor colorWithHue:0.0 saturation:0.0 brightness:0.3 alpha:1.0]];
+    [mySwitch4 setBorderColor:[UIColor clearColor]];
+    [mySwitch4 setShadowColor:[UIColor clearColor]];
 }
 
 - (void)switchChanged:(SevenSwitch *)sender {
